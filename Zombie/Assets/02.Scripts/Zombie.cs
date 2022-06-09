@@ -67,6 +67,21 @@ public class Zombie : LivingEntity
         zombieRenderer.material.color = skinColor;
     }
 
+    // [PunRPC]
+    // public void Setup(float newHealth, float newDamage, float newSpeed, Vector4 colorVector)
+    // {
+    //     // 체력 설정
+    //     startingHealth = newHealth;
+    //     health = newHealth;
+    //     // 공격력 설정
+    //     damage = newDamage;
+    //     // 내비메시 에이전트의 이동 속도 설정
+    //     navMeshAgent.speed = newSpeed;
+    //     // 랜더러가 사용 중인 머티리얼의 컬러를 변경, 외형 색이 변함
+    //     Color skinColor = colorVector;
+    //     zombieRenderer.material.color = skinColor;
+    // }    
+
     private void Start()
     {
         // 호스트가 아니라면 AI의 추적 루틴을 실행하지 않음
